@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.tp13veterinaria;
+
+import java.util.*;
+
+/**
+ *
+ * @author Lautaro
+ */
+public class Tp13Veterinaria {
+
+    public static void main(String[] args) {
+        
+        
+        
+       System.out.println("- Veterinara De Los Papus -");
+       ArrayList<Animales> animales = new ArrayList<>();
+       
+       Dog p = new Dog("Caros", "Border colie", 3);
+       Cat c = new Cat("Roberto", "Marron", 7);
+       Bird b = new Bird("Chip", "Pajarito Ratinero", 64);
+       Fish f = new Fish("Mario", "Pez Dorado", 2);
+       
+       for(Animales a : animales){
+            a.MostrarInfo();
+            a.hacerSonido();
+            System.out.println();
+        }
+       
+       System.out.println(" Acciones Propias ");
+        p.correr();
+        c.araniar();
+        b.volar();
+        f.nadar();
+    }
+    
+    
+}
